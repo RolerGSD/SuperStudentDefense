@@ -22,6 +22,10 @@ public class Bank : MonoBehaviour
     {
         currentBalance += Mathf.Abs(amount);
         UpdateDisplay();
+        if(currentBalance >= 999)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 
     public void Withdraw(int amount)
@@ -30,9 +34,11 @@ public class Bank : MonoBehaviour
         UpdateDisplay();
         if(currentBalance < 0)
         {
-            ReloadScene();
+            SceneManager.LoadScene(3);
         }
+                
     }
+    
 
     void UpdateDisplay()
     {
@@ -42,5 +48,12 @@ public class Bank : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

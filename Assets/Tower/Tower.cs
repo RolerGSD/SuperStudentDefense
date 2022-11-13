@@ -49,6 +49,7 @@ public class Tower : MonoBehaviour
             {
                 grandchild.gameObject.SetActive(true);
             }
+            
         }
     }
 }

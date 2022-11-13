@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameField.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Menu1.unity
+    guid: a7eaaab322b6ed1498222be9e89d1f34
+  - enabled: 1
+    path: Assets/Scenes/Menu2.unity
+    guid: f05f68d2a02de3a459972aeec90c0a69
   m_configObjects: {}
